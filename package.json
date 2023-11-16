@@ -1,0 +1,27 @@
+{
+  "name": "fastdl_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/funczone/fastdl_server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tinyhttp/app": "^2.2.1",
+    "eta": "^3.1.1",
+    "luxon": "^3.4.4",
+    "pino": "^8.16.1",
+    "pino-pretty": "^10.2.3",
+    "sirv": "^2.0.3"
+  },
+  "engines": {
+    "node": ">=20.8.0"
+  }
+}

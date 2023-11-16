@@ -1,0 +1,24 @@
+<% layout("./layout") %>
+
+<%- include("partials/header.eta") %>
+<table>
+    <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Type</th>
+        <th scope="col">Size</th>
+    </tr>
+    <% for (const item of it.node.nodes) { %>
+        <tr>
+            <td>
+                <a href="<%= it.currentPath + item.name %>">
+                    <%= item.name %>
+                </a>
+            </td>
+            <td>
+                <%= item.type == Symbol("directory") ? "Directory" : "File" %>
+            </td>
+            <td>Later.</td>
+        </tr>
+    <% } %>
+</table>
+<%- include("partials/footer.eta") %>
